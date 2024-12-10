@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh; 
+    width: auto;/* Full viewport height */
+    background-image: url('images/ivan-torres-MQUqbmszGGM-unsplash.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+ 
+
+}
+nav {
+    background:  #ffa60062;
+    backdrop-filter: blur(5px); /* Applies the blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a slight shadow */
+}
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #303738; /* Underline color */
+    transition: width 0.5s ease; /* Smooth underline animation */
+  }
+
+  nav ul li a:hover {
+    color: #303738; /* Change text color on hover */
+  }
+
+  nav ul li a:hover::after {
+    width: 100%; /* Full underline width on hover */
+  }
+
+.Img {
+     position: absolute;
+     margin-left: 40px;
+     filter: invert(100%);
+} 
+.nav-bar ul{
+    list-style-type:none ;
+    text-decoration: none;  
+    display: flex; 
+    justify-content:end ;
+    flex-direction: row;
+    margin-top: 0;
+    margin-right: 40px;
+   
+    
+}
+.nav-bar li{
+    padding: 15px;
+}
+
+
+.rounded-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffa600; /* Button background color */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.19) /* Subtle shadow */
+  }
+
+  .rounded-button:hover {
+    background-color: #ffa600ab; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+  }
+
+  .rounded-button:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+  }
+
+/* w---------> wave effect */
+.custom-shape-divider-bottom-1733828071 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1733828071 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1733828071 .shape-fill {
+    fill: #ffa600;
+}
